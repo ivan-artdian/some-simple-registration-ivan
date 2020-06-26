@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box
+} 
+
+
+body {
+	padding: 20px 20px;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 500px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px 20px;
+	background: #fafafa;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: #6200c0; 
+}
+
+.wrapper .title {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.wrapper .input_field {
+	margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"] {
+	padding: 5px;
+	width: 100%;
+}
+
+.wrapper .input_field .dob select {
+	background: none;
+	border-radius: 5px;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+.wrapper .input_field  .button{
+	width: 100%;
+	padding: 11px;
+	color: white;
+	background: #9c27b0;
+	border-radius: 7px;
+	border-style: none;
+	font-size: 18px;
+}
+
+#overlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(254,254,254,0.5);
+  z-index: 2;
+}
+
+#wrapperLogin {
+	display: none;
+}
+
+#responseMessage {
+	position: relative;
+  	display: none;
+	height: 30px;
+	background-color: red;
+	margin-bottom: 10px;
+	padding: 5px;
+	color: white;
+	border-radius: 7px;
+	text-align: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Registration Form</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="custom-styles.css">
+		<script type="text/javascript" src="js/date-list.js"></script>
+		<script type="text/javascript" src="js/validation-tooltip.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<div class="overlay" id="overlay"></div>
+			<div id="responseMessage">something</div>
+			<div class="title">
+				Registration
+			</div>
+			<form id="registrationForm">
+				<div class="form">
+					<div class="input_field">
+						<input type="text" name="mobile_number" placeholder="Mobile Number" required="true" pattern="^(0|\+62|62)(812|813)[0-9]*$" id="mobileNumber">
+					</div>
+					<div class="input_field">
+						<input type="text" name="first_name" placeholder="First Name" class="input_text" required="true" id="firstName">
+					</div>
+					<div class="input_field">
+						<input type="text" name="last_name" placeholder="Last Name" class="input_text" required="true" id="lastName">
+					</div>
+					<div class="input_field">
+						<div class="dob">
+							<label>Date of Birth</label>
+							<br>
+							<select name="DOB" id="monthOfBirth">
+								<option value="January">January</option>
+								<option value="february">february</option>
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+								<option value="July">July</option>
+								<option value="August">August</option>
+								<option value="September">September</option>
+								<option value="October">October</option>
+								<option value="November">November</option>
+								<option value="December">December</option>
+							</select>
+							<select name="DOB" id="dateOfBirth"></select>
+							<select name="DOB" id="yearOfBirth"></select>
+						</div>
+					</div>
+					<div class="input_field">
+						<input type="radio" name="gender" id="male" value="male">
+						<label for="male">Male</label>
+						<input type="radio" name="gender" id="female" value="female">
+						<label for="female">Female</label>
+					</div>
+					<div class="input_field">
+						<input type="text" name="email" placeholder="Email" class="input_text" required="true" id="email">
+					</div>
+					<div class="input_field">
+						<input type="submit" value="Register" class="button visibile-on-blur" id="registerSubmitButton">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="wrapper" id="wrapperLogin">
+			<div class="input_field">
+						<input type="button" value="Login" class="button visibile-on-blur" id="LoginButton">
+					</div>
+		</div>
+
+		
+		<script type="text/javascript" src="js/actions.js"></script>
+	</body>
+</html>
